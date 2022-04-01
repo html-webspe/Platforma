@@ -2355,7 +2355,7 @@ body::after {
 }
 
 .no-webp .page-login, .no-webp .page-register{
-  background-image: url(../img/auth/auth-bg.png) no-repeat center/cover; }
+  background: url(../img/auth/auth-bg.png) no-repeat center/cover; }
 
 .page-login,
 .page-register {
@@ -2537,6 +2537,10 @@ body::after {
   .menu {
     width: 25.3125rem;
   }
+
+  .object__button {
+    top: 0;
+  }
 }
 
 @media (min-width: 47.99875em) {
@@ -2617,10 +2621,6 @@ body::after {
 
   .intro__btn.btn-map {
     margin-right: 1.25rem;
-  }
-
-  .object__button {
-    top: 0;
   }
 
   .app {
@@ -3319,10 +3319,6 @@ body::after {
     margin-bottom: 1.25rem;
   }
 
-  .object__title {
-    padding: 0px 59px 0px 44px;
-  }
-
   .object__wrapper {
     margin-left: -1.6875rem;
   }
@@ -3390,6 +3386,14 @@ body::after {
   .register .checkbox__text {
     font-size: 0.625rem;
     line-height: 1.3;
+  }
+
+  .object__title {
+    padding: 0px 59px 0px 59px;
+  }
+
+  .object__title span {
+    display: block;
   }
 
   .dropdown-filter__range {
@@ -3506,7 +3510,7 @@ body::after {
 
 .webp .app{ background: url(../img/app/app-bg.webp), linear-gradient(89.87deg, #f6f7fc 0.1%, #d2d2d2 99.87%); }
 
-.webp .page-login, .webp .page-register{ background-image: url(../img/auth/auth-bg.webp) no-repeat center/cover; }
+.webp .page-login, .webp .page-register{ background: url(../img/auth/auth-bg.webp) no-repeat center/cover; }
 
 @media (min-width: 47.99875em){
 
