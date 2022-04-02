@@ -2602,7 +2602,7 @@ body::after {
   }
 
   .intro__body {
-    padding: 0 3.4375rem;
+    padding: 4.6875rem 3.4375rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
