@@ -8701,6 +8701,28 @@
         window.onresize = function() {
             filterWidthSize();
         };
+        const uploadFoto = document.querySelectorAll(".upload-foto"), deleteFoto = document.querySelectorAll(".delete-foto"), uploadInput = document.querySelectorAll(".upload-input"), reader = new FileReader;
+        if (uploadFoto) {
+            uploadInput.forEach((element => {
+                element.addEventListener("change", (function() {
+                    if (this.files[0]) {
+                        reader.addEventListener("load", (function() {
+                            uploadFoto.forEach((el => {
+                                el.src = reader.result;
+                            }));
+                        }), false);
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                }));
+            }));
+            deleteFoto.forEach((element => {
+                element.addEventListener("click", (function(e) {
+                    uploadFoto.forEach((el => {
+                        el.src = "";
+                    }));
+                }));
+            }));
+        }
         window["FLS"] = true;
         isWebp();
         addTouchClass();
