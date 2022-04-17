@@ -1329,10 +1329,6 @@ main {
           flex: 1 1 100%;
 }
 
-.header-object {
-  background: #4A4A4A;
-}
-
 .menu-open .menu {
   right: 0;
 }
@@ -1343,6 +1339,7 @@ main {
   left: 0;
   width: 100%;
   z-index: 10;
+  background: #4A4A4A;
 }
 
 .header::after {
@@ -1353,6 +1350,10 @@ main {
   width: 100%;
   height: 1px;
   border: 0.8px solid rgba(199, 149, 126, 0.3);
+}
+
+.header-transparent {
+  background: transparent;
 }
 
 .header__body {
@@ -3682,6 +3683,7 @@ main {
 
   .object-intro__decor {
     width: 28.125rem;
+    top: 100px;
   }
 
   .main-layouts .object-intro__decor {
@@ -3829,6 +3831,10 @@ main {
 
   .dropdown-filter-all::after {
     left: 60%;
+  }
+
+  .object-intro__widget {
+    bottom: auto;
   }
 }
 
