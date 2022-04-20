@@ -1256,8 +1256,20 @@ body::after {
 }
 
 .pagging__arrow {
-  padding: 0.625rem 0.9375rem;
   position: relative;
+  width: 25px;
+  height: 25px;
+  background: #FAFAFA;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pagging__arrow::before {
@@ -4185,6 +4197,64 @@ body::after {
   color: #8A8A8A;
 }
 
+.main-checkerboard {
+  padding: 60px 16px 80px 16px;
+}
+
+.aside h2 {
+  font-size: 22px;
+  line-height: 1.2727272727;
+  font-weight: 500;
+  color: #BA846E;
+  margin-bottom: 1.875rem;
+}
+
+.aside__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 160px;
+          flex: 0 1 160px;
+}
+
+.aside .select__value {
+  padding: 9px;
+  font-size: 12px;
+  line-height: 1.25;
+  border: 1px solid #00C9CE;
+}
+
+.checkerboard-main {
+  overflow: auto;
+}
+
+.checkerboard-main__header span {
+  font-size: 12px;
+  line-height: 1.25;
+  color: #000;
+}
+
+.checkerboard-main .board-info__body {
+  padding-top: 30px;
+  margin-bottom: 1.875rem;
+}
+
+.checkerboard-main__checkbox .checkbox__label {
+  white-space: nowrap;
+}
+
+.checkerboard-main__checkbox .checkbox__control {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+  height: 25px;
+}
+
+.checkerboard-main .pagging {
+  margin-bottom: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .footer {
   background: #202020;
   text-align: center;
@@ -6027,6 +6097,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 47.99875em) {
+  .pagging__arrow {
+    width: 50px;
+    height: 50px;
+  }
+
   .header {
     padding: 0.875rem 1.25rem;
   }
@@ -6458,6 +6533,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 18px;
   }
 
+  .main-checkerboard {
+    padding: 80px 56px 100px 56px;
+  }
+
+  .aside__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 285px;
+            flex: 0 1 285px;
+  }
+
+  .aside .select__value {
+    font-size: 18px;
+    padding: 11px 20px;
+  }
+
+  .checkerboard-main__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 5px;
+    margin-bottom: 2.5rem;
+  }
+
+  .checkerboard-main__header span {
+    font-size: 16px;
+  }
+
+  .checkerboard-main__checkbox .checkbox__label:not(:last-child) {
+    margin-right: 25px;
+  }
+
   .footer__group:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6722,6 +6831,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .installments__item-select .select__option {
     font-size: 20px;
     line-height: 1.25;
+  }
+
+  .aside .select__value {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .checkerboard-main__header {
+    padding-right: 40px;
+  }
+
+  .checkerboard-main__header span {
+    font-size: 1.125rem;
   }
 }
 
@@ -7179,6 +7301,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .finishing .object-intro__decor {
     right: -2.75rem;
   }
+
+  .checkerboard-main__checkbox .checkbox__label {
+    gap: 20px;
+  }
+
+  .checkerboard-main__checkbox .checkbox__label:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 @media (min-width: 90.625em) {
@@ -7282,6 +7412,37 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (min-width: 75em) {
+  .main-checkerboard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 285px;
+            flex: 0 0 285px;
+    padding-top: 20px;
+    margin-right: 25px;
+  }
+
+  .aside__item:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .checkerboard-main__header {
+    margin-bottom: 1rem;
+  }
+
+  .checkerboard-main .pagging {
+    padding: 0 84px;
+  }
+}
+
 @media (min-width: 1500px) {
   .intro__content {
     padding-top: 8.4375rem;
@@ -7344,6 +7505,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: block;
     width: 505px;
   }
+
+  .main-checkerboard {
+    padding-right: 120px;
+    padding-left: 200px;
+  }
+
+  .checkerboard-main__header {
+    padding-right: 144px;
+  }
 }
 
 @media (min-width: 120em) {
@@ -7391,6 +7561,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 9px;
     background: -o-linear-gradient(327.25deg, #C4C4C4 -90.93%, rgba(196, 196, 196, 0) 72.35%);
     background: linear-gradient(122.75deg, #C4C4C4 -90.93%, rgba(196, 196, 196, 0) 72.35%);
+  }
+}
+
+@media (max-width: 75em) {
+  .aside {
+    margin-bottom: 2.5rem;
+  }
+
+  .aside__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -8084,6 +8272,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .mortgage__reduction-text {
     margin-bottom: 1.0625rem;
+  }
+
+  .checkerboard-main__checkbox .checkbox__label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.9375rem;
+  }
+
+  .checkerboard-main__checkbox .checkbox__label:first-child {
+    padding-top: 15px;
+  }
+
+  .checkerboard-main__checkbox .checkbox__label br {
+    display: none;
   }
 
   .footer__social {
