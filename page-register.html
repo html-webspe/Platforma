@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220420213547">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220421155437">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -158,7 +158,7 @@
 
 	<div id="account-created" aria-hidden="true" style="display: none;" class="popup-auth popup">
 		<div class="popup__wrapper">
-			<div class="popup__conten auth">
+			<div class="popup__content auth">
 				<p class="auth__text">Учетная запись создана.
 					Ожидайте подтверждения регистрации от модератора.</p>
 			</div>
@@ -166,12 +166,131 @@
 	</div>
 	<div id="account-already" aria-hidden="true" style="display: none;" class="popup-auth popup">
 		<div class="popup__wrapper">
-			<div class="popup__conten auth">
+			<div class="popup__content auth">
 				<p class="auth__text">Такая учетная запись уже зарегистрирована!</p>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220420213547"></script>
+
+
+	<div id="presentations-download" aria-hidden="true" class="popup-presentations popup">
+		<div class="popup__wrapper">
+			<div class="popup__content presentations__content">
+				<button data-close type="button" class="popup__close"><i class="icon-close"></i></button>
+
+				<h3 class="presentations__title">Скачать в формате PDF</h3>
+
+				<div data-tabs class="presentations-settings">
+					<nav data-tabs-titles class="presentations__navigation">
+						<button type="button" class="presentations__navigation-title _tab-active">Скачать</button>
+						<button type="button" class="presentations__navigation-title">Настроить</button>
+					</nav>
+					<div data-tabs-body class="presentations__block">
+						<div class="presentations__block-body">
+							<div class="presentations__button-wrapper">
+								<button type="button" class="presentations__button button">Скачать
+									презентацию</button>
+								<a href="#" class="presentations__btn">Предварительный просмотр</a>
+							</div>
+						</div>
+						<div class="presentations__block-body">
+							<div class="presentations__block-body-inner">
+								<div class="presentations__col">
+									<label class="presentations__checkbox">
+										<input checked type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Название ЖК</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Планировка</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Поэтажный план</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Паспорт квартиры</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Отделка</span>
+									</label>
+									<label class="presentations__checkbox mb50">
+										<input checked type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Вид из окон</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Пример расчета ипотеки</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Пример расчета рассрочки</span>
+									</label>
+								</div>
+
+								<div class="presentations__col">
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Рендеры ЖК</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Ход строительства ЖК</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Паспорт обьекта</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Срок передачи ключей</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Срок сдачи</span>
+									</label>
+									<label class="presentations__checkbox mb50">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Динамика цены</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Программы ипотеки</span>
+									</label>
+									<label class="presentations__checkbox">
+										<input type="checkbox" class="presentations__checkbox-input">
+										<div class="presentations__checkbox-button"></div>
+										<span class="presentations__checkbox-text">Программы рассрочки</span>
+									</label>
+								</div>
+							</div>
+							<button type="button" class="presentations__button-second button">Общие настройки</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220421155437"></script>
 </body>
 
 </html>
