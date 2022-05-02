@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Квартиры и апартаменты в МОСКВЕ</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220502174130">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header-profil header-transparent">
+			<div class="header__body">
+
+				<a href="" class="header__logo logo">
+					<img src="img/logo.svg" alt="Логотип">
+				</a>
+
+				<div class="header__menu-desctop desktop-menu">
+					<nav class="desktop-menu__nav">
+						<ul class="desktop-menu__list">
+							<li class="desktop-menu__item"><a href="" class="desktop-menu__link">Новостройки</a>
+							</li>
+							<li class="desktop-menu__item"><a href="" class="desktop-menu__link">Вторички</a>
+							</li>
+							<li class="desktop-menu__item"><a href="" class="desktop-menu__link">Уступки</a>
+							</li>
+							<li class="desktop-menu__item"><a href="" class="desktop-menu__link">Чат</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__location">
+					<span>Москва</span>
+				</div>
+
+				<div class="header__user user ">
+					<div class="user__avatar">
+						<picture><source srcset="img/user/user-avatar.webp" type="image/webp"><img src="img/user/user-avatar.jpg" alt="Аватарка пользователя"></picture>
+					</div>
+					<span>Илья Соболев</span>
+				</div>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="active menu__link icon-user">Профиль</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-cheked-icon">Мои клиенты</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Статистика</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Тарифная карта</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-buildings">Новостройки</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-resales">Вторички</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Уступки</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Сравнения</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Презентации</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-files">Файлы</a></li>
+						</ul>
+					</nav>
+				</div>
+				<button type="button" class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="main main-clients">
+			<picture><source srcset="img/page-object/decor.webp" type="image/webp"><img class="object-intro__decor" src="img/page-object/decor.png" alt="decor"></picture>
+			<div class="clients">
+				<h2 class="clients__title">МОИ КЛИЕНТЫ</h2>
+
+				<div class="clients__action">
+					<form action="" class="clients__action-form">
+						<input autocomplete="off" type="text" placeholder="Поиск клиента" class="clients__action-form-input input">
+						<button type="button" class="clients__action-form-button">
+							<i class="icon-search"></i>
+						</button>
+					</form>
+
+					<button type="button" class="clients__button button">Добавить клиента</button>
+				</div>
+
+				<div class="clients__wrapper">
+					<div data-tabs class="clients__tabs">
+
+
+						<nav data-tabs-titles class="clients__navigation">
+							<button type="button" class="clients__navigation-title _tab-active">В работе</button>
+							<button type="button" class="clients__navigation-title">Требуют ожидания</button>
+							<button type="button" class="clients__navigation-title">История работы</button>
+							<button type="button" class="clients__navigation-title">Коммерческое предложение</button>
+							<button type="button" class="clients__navigation-title">Архив</button>
+						</nav>
+
+
+						<div data-tabs-body class="clients__content">
+
+							<div class="clients__content-body clients-body">
+								<div class="clients-body__row clients-body__row-header">
+									<span>Клиент</span>
+									<span>Поставщик</span>
+									<span>Статус работы</span>
+									<span>Последнее действие</span>
+									<span>История просм.</span>
+									<span>Результат</span>
+									<span class="null"></span>
+								</div>
+
+								<div class="clients-body__row">
+									<div class="clients-body__item clients-body__item-contact">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Я - Чуганов Сергей Игоревич </span>
+											<span class="clients-body__item-info-tel">+7 (900) 000-00-00</span>
+										</div>
+										<button type="button" class="clients-js clients-body__item-edit-btn"><i class="icon-pen"></i></button>
+
+										<div class="clients-info__dropdown">
+											<h4>Редактирование данных клиента</h4>
+
+											<form action="" class="form clients-form">
+												<lable class="clients-form__lable">
+													<input autocomplete="off" type="tex" name="form[]" placeholder="ФИО*" class="clients-form__input input">
+													<div class="clients-form__err"></div>
+												</lable>
+												<lable class="clients-form__lable">
+													<input autocomplete="off" type="tex" name="form[]" placeholder="Номер телефона*" class="clients-form__input input">
+													<div class="clients-form__err"></div>
+												</lable>
+												<lable class="clients-form__lable">
+													<input autocomplete="off" type="email" name="form[]" placeholder="E-mail*" class="clients-form__input input">
+													<div class="clients-form__err"></div>
+												</lable>
+												<lable class="clients-form__lable">
+													<input autocomplete="off" type="email" name="form[]" placeholder="Дополнительный E-mail" class="clients-form__input input">
+													<div class="clients-form__err"></div>
+												</lable>
+											</form>
+
+											<div class="clients-info__dropdown-button-wrapper">
+												<button type="button" class="clients-info__dropdown-button button">Сохранить</button>
+												<button type="button" class="clients-info__close clients-info__dropdown-button button">Отменить</button>
+											</div>
+
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название <br> поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Новый клиент</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<span>Создание клиента:</span>
+											<time>16.06.2021 в 18:00</time>
+										</div>
+										<button type="button" class="clients-body__item-add-btn"><i class="icon-add"></i></button>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>1 квартира</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>...</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-locked">
+										<button type="button" class="clients-body__item-locked-btn">
+											<i class="icon-locked"></i></button>
+									</div>
+
+								</div>
+								<div class="clients-body__row">
+									<div class="clients-body__item clients-body__item-contact">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович</span>
+											<span class="clients-body__item-info-tel">+7 (900) 000-00-00</span>
+										</div>
+										<button type="button" class="clients-body__item-edit-btn"><i class="icon-pen"></i></button>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название <br> поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Новый клиент</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<span>Создание клиента:</span>
+											<time>16.06.2021 в 18:00</time>
+
+											<p>3 к. кв. 220 м2 в История парк</p>
+										</div>
+										<button type="button" class="clients-body__item-add-btn"><i class="icon-add"></i></button>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>1 квартира</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>...</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-locked">
+										<button type="button" class="clients-body__item-locked-btn">
+											<i class="icon-locked"></i></button>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="clients__content-body clients-body">
+								<div class="clients-body__row clients-body__row-header">
+									<span>Клиент</span>
+									<span>Поставщик</span>
+									<span>Без активности</span>
+									<span>Последнее действие</span>
+									<span>История просм.</span>
+									<span>Результат</span>
+									<span class="null"></span>
+								</div>
+
+								<div class="clients-body__row">
+									<div class="clients-body__item clients-body__item-contact">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович </span>
+											<span class="clients-body__item-info-tel">+7 (900) 000-00-00</span>
+										</div>
+										<button type="button" class="clients-body__item-edit-btn"><i class="icon-pen"></i></button>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название <br> поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span class="red">13 Дней</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<span>Создание клиента:</span>
+											<time>16.06.2021 в 18:00</time>
+
+											<p>3 к. кв. 220 м2 в История парк</p>
+										</div>
+										<button type="button" class="clients-body__item-add-btn"><i class="icon-add"></i></button>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>2 квартиры</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>...</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-locked">
+										<button type="button" class="clients-body__item-locked-btn">
+											<i class="icon-locked"></i></button>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="clients__content-body clients-body">
+								<div class="clients-body__row clients-body__row-header pr50">
+									<span>Дата активности</span>
+									<span>Клиент</span>
+									<span>Поставщик</span>
+									<span>Последнее действие</span>
+									<span>История просмотра</span>
+								</div>
+
+								<div class="clients-body__row">
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span> <b>18:18</b> <br> 16.08.2021</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович </span>
+										</div>
+										<button type="button" class="clients-js clients-body__item-mark-btn"><i class="icon-mark"></i></button>
+
+										<div class="clients-info__dropdown">
+											<h4>Подробнее о клиенте</h4>
+											<p>Щербаков Алексей Владиславович</p>
+											<a href="tel:+79000000000">+7 (900) 000-00-00</a>
+											<button type="button" class="clients-info__close clients-info__dropdown-button button">Закрыть
+												подробности</button>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<div>
+												<span> Заявка на бронирование: </span> <br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span> Заявка на бронирование: </span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>2 квартиры</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="clients-body__row">
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span> <b>18:18</b> <br> 16.08.2021</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович </span>
+										</div>
+										<button type="button" class="clients-js clients-body__item-mark-btn"><i class="icon-mark"></i></button>
+
+										<div class="clients-info__dropdown">
+											<h4>Подробнее о клиенте</h4>
+											<p>Щербаков Алексей Владиславович</p>
+											<a href="tel:+79000000000">+7 (900) 000-00-00</a>
+											<button type="button" class="clients-info__close clients-info__dropdown-button button">Закрыть
+												подробности</button>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<div>
+												<span> Заявка на бронирование: </span> <br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span> Заявка на бронирование: </span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>2 квартиры</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="clients__content-body clients-body">
+								<div class="clients-body__row clients-body__row-header pr50">
+									<span>Отправки агентов</span>
+									<span>Клиент</span>
+									<span>Поставщик</span>
+									<span>Последнее действие</span>
+									<span>История просмотра</span>
+								</div>
+
+								<div class="clients-body__row">
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span> <b>18:18</b> <br> 16.08.2021</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович </span>
+										</div>
+										<button type="button" class="clients-js clients-body__item-mark-btn"><i class="icon-mark"></i></button>
+
+										<div class="clients-info__dropdown">
+											<h4>Подробнее о клиенте</h4>
+											<p>Щербаков Алексей Владиславович</p>
+											<a href="tel:+79000000000">+7 (900) 000-00-00</a>
+											<button type="button" class="clients-info__close clients-info__dropdown-button button">Закрыть
+												подробности</button>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<div>
+												<span> Заявка на бронирование: </span> <br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span> Заявка на бронирование: </span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>2 квартиры</span>
+										</div>
+									</div>
+
+								</div>
+								<div class="clients-body__row">
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span> <b>18:18</b> <br> 16.08.2021</span>
+										</div>
+									</div>
+
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span class="clients-body__item-info-name">Щербаков Алексей Владиславович </span>
+										</div>
+										<button type="button" class="clients-js clients-body__item-mark-btn"><i class="icon-mark"></i></button>
+
+										<div class="clients-info__dropdown">
+											<h4>Подробнее о клиенте</h4>
+											<p>Щербаков Алексей Владиславович</p>
+											<a href="tel:+79000000000">+7 (900) 000-00-00</a>
+											<button type="button" class="clients-info__close clients-info__dropdown-button button">Закрыть
+												подробности</button>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>Название поставщика</span>
+										</div>
+									</div>
+
+									<div class="clients-body__item clients-body__item-date">
+										<div class="clients-body__item-info clients-body__item-info-date">
+											<div>
+												<span> Заявка на бронирование: </span> <br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span> Заявка на бронирование: </span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+											<div>
+												<span>Создание клиента:</span><br>
+												<time>16.06.2021 в 18:00</time>
+
+												<p>3 к. кв. 220 м2 в История парк</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="clients-body__item">
+										<div class="clients-body__item-info">
+											<span>2 квартиры</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__group footer__group-logo">
+					<a href="" class="footer__logo">
+						<img src="img/logo.svg" alt="Лого">
+					</a>
+				</div>
+
+				<div class="footer__group footer__group-nagigation">
+					<nav class="footer__nagigation">
+						<ul class="footer__nagigation-list">
+							<li><a href="" class="footer__nagigation-link">Новостройки</a></li>
+							<li><a href="" class="footer__nagigation-link">Вторичка</a></li>
+							<li><a href="" class="footer__nagigation-link">Уступки</a></li>
+							<li><a href="" class="footer__nagigation-link">Сравнения</a></li>
+							<li><a href="" class="footer__nagigation-link">Презентации</a></li>
+							<li><a href="" class="footer__nagigation-link">Профиль</a></li>
+							<li><a href="" class="footer__nagigation-link">Клиенты</a></li>
+							<li><a href="" class="footer__nagigation-link">Статистика</a></li>
+							<li><a href="" class="footer__nagigation-link">Тарифная карты</a></li>
+							<li><a href="" class="footer__nagigation-link">Файлы</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="footer__group">
+					<div class="footer__social social" data-da=".footer__group-logo,1500,last">
+						<a href="" class="social__item">
+							<svg width="36" height="30" viewBox="0 0 36 30">
+								<path d="M14.3344 19.772L13.7637 28.148C14.5802 28.148 14.9338 27.782 15.3579 27.3425L19.1861 23.525L27.1184 29.5865C28.5732 30.4325 29.5981 29.987 29.9906 28.19L35.1973 2.73209L35.1988 2.73059C35.6602 0.486606 34.4211 -0.39089 33.0036 0.159607L2.39854 12.386C0.309807 13.232 0.341432 14.447 2.04347 14.9975L9.86797 17.537L28.0427 5.67058C28.8981 5.07958 29.6758 5.40658 29.0361 5.99758L14.3344 19.772Z" />
+							</svg>
+						</a>
+						<a href="" class="social__item">
+							<svg width="30" height="30" viewBox="0 0 30 30">
+								<path d="M14.8792 0H14.8719C6.8336 0 0.296875 6.7275 0.296875 15C0.296875 18.2812 1.32467 21.3225 3.07229 23.7919L1.25542 29.3644L6.85911 27.5213C9.16437 29.0925 11.9143 30 14.8792 30C22.9175 30 29.4543 23.2706 29.4543 15C29.4543 6.72938 22.9175 0 14.8792 0ZM23.3622 21.1819C23.0105 22.2038 21.6146 23.0512 20.5011 23.2987C19.7394 23.4656 18.7444 23.5988 15.3949 22.17C11.1106 20.3438 8.35161 15.8644 8.13657 15.5737C7.93065 15.2831 6.40535 13.2019 6.40535 11.0494C6.40535 8.89688 7.46777 7.84875 7.89602 7.39875C8.24773 7.02938 8.82906 6.86062 9.38669 6.86062C9.5671 6.86062 9.72929 6.87 9.87508 6.8775C10.3033 6.89625 10.5184 6.9225 10.8008 7.61813C11.1525 8.49 12.009 10.6425 12.1111 10.8638C12.215 11.085 12.3188 11.385 12.173 11.6756C12.0364 11.9756 11.9161 12.1087 11.7011 12.3637C11.486 12.6187 11.2819 12.8138 11.0669 13.0875C10.8701 13.3256 10.6478 13.5806 10.8956 14.0213C11.1434 14.4525 11.9999 15.8906 13.261 17.0456C14.8883 18.5362 16.2077 19.0125 16.6797 19.215C17.0314 19.365 17.4505 19.3294 17.7075 19.0481C18.0337 18.6863 18.4364 18.0863 18.8464 17.4956C19.138 17.0719 19.5061 17.0194 19.8925 17.1694C20.2861 17.31 22.369 18.3694 22.7973 18.5887C23.2255 18.81 23.508 18.915 23.6119 19.1006C23.7139 19.2863 23.7139 20.1581 23.3622 21.1819Z" />
+							</svg>
+						</a>
+						<a href="" class="social__item">
+							<svg width="32" height="30" viewBox="0 0 32 30">
+								<g clip-path="url(#clip0_210_2213)">
+									<path d="M22.8803 0H8.77783C4.18805 0 0.454102 3.64288 0.454102 8.12071V21.8795C0.454102 26.3571 4.18805 29.9999 8.77783 29.9999H22.8805C27.4701 29.9999 31.204 26.3571 31.204 21.8795V8.12071C31.204 3.64288 27.4701 0 22.8803 0V0ZM15.8291 23.2029C11.1928 23.2029 7.42112 19.5231 7.42112 15C7.42112 10.4768 11.1928 6.79709 15.8291 6.79709C20.4653 6.79709 24.237 10.4768 24.237 15C24.237 19.5231 20.4653 23.2029 15.8291 23.2029ZM24.4381 8.7316C23.068 8.7316 21.9536 7.64441 21.9536 6.30774C21.9536 4.97107 23.068 3.88366 24.4381 3.88366C25.8082 3.88366 26.9228 4.97107 26.9228 6.30774C26.9228 7.64441 25.8082 8.7316 24.4381 8.7316Z" />
+									<path d="M15.8291 8.55591C12.1872 8.55591 9.22388 11.4467 9.22388 15.0001C9.22388 18.5532 12.1872 21.4442 15.8291 21.4442C19.4714 21.4442 22.4344 18.5532 22.4344 15.0001C22.4344 11.4467 19.4714 8.55591 15.8291 8.55591Z" />
+									<path d="M24.4381 5.64258C24.0623 5.64258 23.7563 5.94104 23.7563 6.30771C23.7563 6.67438 24.0623 6.97284 24.4381 6.97284C24.8142 6.97284 25.1201 6.6746 25.1201 6.30771C25.1201 5.94081 24.8142 5.64258 24.4381 5.64258Z" fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_210_2213">
+										<rect width="30.75" height="30" fill="white" transform="translate(0.454102)" />
+									</clipPath>
+								</defs>
+							</svg>
+
+						</a>
+					</div>
+					<p class="footer__text">
+						ООО «Арт Истейт»,
+						Москва, ул. Пресненская наб. 12, Башня "Федерация Восток", 57 этаж, пом. 16
+						ИНН 381706330900 ОГРН 312784701600758
+					</p>
+					<div class="footer__pay">
+						<a href="" class="footer__pay-item">
+							<img src="img/footer/visa.svg" alt="visa">
+						</a>
+						<a href="" class="footer__pay-item">
+							<img src="img/footer/applepay.svg" alt="applepay">
+						</a>
+						<a href="" class="footer__pay-item">
+							<img src="img/footer/mastercard.svg" alt="mastercard">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<p>ООО «Арт Истейт». Экспертное агентство по продаже недвижимости.</p>
+				<a href="">Политика конфиденциальности</a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20220502174130"></script>
+</body>
+
+</html>

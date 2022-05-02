@@ -5797,7 +5797,10 @@
                             const targetTag = targetElement.closest(this.getSelectClass(this.selectClasses.classSelectTag));
                             const optionItem = document.querySelector(`.${this.selectClasses.classSelect}[data-id="${targetTag.dataset.selectId}"] .select__option[data-value="${targetTag.dataset.value}"]`);
                             this.optionAction(selectItem, originalSelect, optionItem);
-                        } else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectTitle))) this.selectAction(selectItem); else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption))) {
+                        } else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectTitle))) {
+                            this.selectsСlose();
+                            this.selectAction(selectItem);
+                        } else if (targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption))) {
                             const optionItem = targetElement.closest(this.getSelectClass(this.selectClasses.classSelectOption));
                             this.optionAction(selectItem, originalSelect, optionItem);
                         }
@@ -13990,6 +13993,22 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             }));
         }
+        const clientsInfo = document.querySelectorAll(".clients-js"), clientsInfoDropdown = document.querySelectorAll(".clients-info__dropdown"), clientsInfoClose = document.querySelectorAll(".clients-info__close");
+        clientsInfo.forEach((el => {
+            el.addEventListener("click", (function(e) {
+                clientsInfoDropdown.forEach((element => {
+                    element.classList.remove("show");
+                }));
+                this.closest(".clients-body__item").querySelector(".clients-info__dropdown").classList.add("show");
+            }));
+        }));
+        clientsInfoClose.forEach((element => {
+            element.addEventListener("click", (function(e) {
+                clientsInfoDropdown.forEach((element => {
+                    element.classList.remove("show");
+                }));
+            }));
+        }));
         window["FLS"] = false;
         isWebp();
         addTouchClass();

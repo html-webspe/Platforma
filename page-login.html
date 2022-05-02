@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220426144639">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220502174130">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,12 +34,12 @@
 				<h1 class="login__title">Вход</h1>
 
 				<form action="#" class="login__form form-login">
-					<lable class="form-login__input">
-						<input autocomplete="off" type="tel" name="form[]" placeholder="Номер телефона*" class="input">
+					<lable class="form-login__lable">
+						<input autocomplete="off" type="tel" name="form[]" placeholder="Номер телефона*" class="form-login__input input">
 						<div class="form-login__err">Введите номер телефона</div>
 					</lable>
-					<lable class="form-login__input">
-						<input autocomplete="off" type="password" name="form[]" placeholder="Пароль*" class="input">
+					<lable class="form-login__lable">
+						<input autocomplete="off" type="password" name="form[]" placeholder="Пароль*" class="form-login__input input">
 						<div class="form-login__err">Неправильный пароль</div>
 					</lable>
 					<a href="" data-popup="#popup-forgot" class="form-login__link">Забыли пароль?</a>
@@ -58,8 +58,8 @@
 					сроком действия)</p>
 
 				<form action="#" class="popup__form form-login">
-					<lable class="form-login__input">
-						<input autocomplete="off" type="email" name="form[]" placeholder="E-mail" class="input">
+					<lable class="form-login__lable">
+						<input autocomplete="off" type="email" name="form[]" placeholder="E-mail" class="form-login__input input">
 						<div class="form-login__err">Неверная почта</div>
 					</lable>
 					<p>
@@ -79,12 +79,12 @@
 				<h2 class="login__title login__title-sm">Изминение пароля</h2>
 
 				<form action="#" class="popup__form form-login">
-					<lable class="form-login__input">
-						<input autocomplete="off" type="password" name="form[]" placeholder="Введите новый пароль" class="input">
+					<lable class="form-login__lable">
+						<input autocomplete="off" type="password" name="form[]" placeholder="Введите новый пароль" class="form-login__input input">
 
 					</lable>
-					<lable class="form-login__input">
-						<input autocomplete="off" type="password" name="form[]" placeholder="Повторите новый пароль" class="input">
+					<lable class="form-login__lable">
+						<input autocomplete="off" type="password" name="form[]" placeholder="Повторите новый пароль" class="form-login__input input">
 					</lable>
 					<p>Вспомнили пароль? <a href="" data-popup="#popup-login" class="form-login__link">Войти</a></p>
 
@@ -94,8 +94,6 @@
 			</div>
 		</div>
 	</div>
-
-
 
 	<div id="account-created" aria-hidden="true" style="display: none;" class="popup-auth popup">
 		<div class="popup__wrapper">
@@ -231,7 +229,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220426144639"></script>
+	<script src="js/app.min.js?_v=20220502174130"></script>
 </body>
 
 </html>
