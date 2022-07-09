@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header header-profil header-transparent">
 			<div class="header__body">
 
 				<a href="" class="header__logo logo">
@@ -47,78 +47,85 @@
 				</div>
 
 				<div class="header__menu menu">
-					<a href="" class="menu__logo">
-						<img src="img/logo.svg" alt="Логотип">
-					</a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Профиль</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Мои клиенты</a></li>
+							<li class="menu__item"><a href="" class="active menu__link icon-user">Профиль</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-cheked-icon">Мои клиенты</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Статистика</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Тарифная карта</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Новостройки</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Вторички</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-buildings">Новостройки</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-resales">Вторички</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Уступки</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Сравнения</a></li>
 							<li class="menu__item"><a href="" class="menu__link">Презентации</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Файлы</a></li>
+							<li class="menu__item"><a href="" class="menu__link icon-files">Файлы</a></li>
 						</ul>
 					</nav>
-
-					<div class="header__contacts contacts">
-						<div class="contacts__item">
-							<span>Телефон</span>
-							<a href="tel:+74952552000">+7 (495) 255 20 00</a>
-						</div>
-
-						<div class="contacts__item">
-							<span>Адрес</span>
-							<p>Москва, ул. Пресненская наб. 12, Башня "Федерация Восток", 57 этаж, пом. 16</p>
-						</div>
-
-						<div class="contacts__item">
-							<span class="contacts__text">Работаем без выходных и&nbsp;праздников</span>
-						</div>
-					</div>
-
-					<div class="header__social social">
-						<a href="" class="social__item">
-							<svg width="46" height="40" viewBox="0 0 46 40">
-								<path d="M18.05 26.3626L17.2891 37.5305C18.3778 37.5305 18.8493 37.0425 19.4147 36.4565L24.5189 31.3665L35.0953 39.4485C37.0351 40.5765 38.4017 39.9825 38.9249 37.5865L45.8673 3.64267L45.8692 3.64067C46.4845 0.648685 44.8322 -0.521308 42.9424 0.212688L2.13556 16.5146C-0.649425 17.6426 -0.607257 19.2626 1.66213 19.9966L12.0948 23.3826L36.3278 7.56065C37.4682 6.77265 38.5052 7.20865 37.6522 7.99665L18.05 26.3626Z" />
-							</svg>
-						</a>
-						<a href="" class="social__item">
-							<svg width="40" height="40" viewBox="0 0 40 40">
-								<path d="M20.0742 -0.00012207H20.0645C9.34674 -0.00012207 0.631104 8.96988 0.631104 19.9999C0.631104 24.3749 2.0015 28.4299 4.33166 31.7224L1.90917 39.1524L9.38075 36.6949C12.4544 38.7899 16.121 39.9999 20.0742 39.9999C30.792 39.9999 39.5076 31.0274 39.5076 19.9999C39.5076 8.97238 30.792 -0.00012207 20.0742 -0.00012207ZM31.3849 28.2424C30.9159 29.6049 29.0547 30.7349 27.5701 31.0649C26.5545 31.2874 25.2278 31.4649 20.7619 29.5599C15.0494 27.1249 11.3707 21.1524 11.084 20.7649C10.8095 20.3774 8.77574 17.6024 8.77574 14.7324C8.77574 11.8624 10.1923 10.4649 10.7633 9.86488C11.2322 9.37238 12.0073 9.14738 12.7509 9.14738C12.9914 9.14738 13.2077 9.15988 13.402 9.16988C13.973 9.19488 14.2598 9.22988 14.6364 10.1574C15.1053 11.3199 16.2473 14.1899 16.3834 14.4849C16.5219 14.7799 16.6604 15.1799 16.466 15.5674C16.2838 15.9674 16.1234 16.1449 15.8367 16.4849C15.55 16.8249 15.2778 17.0849 14.9911 17.4499C14.7287 17.7674 14.4323 18.1074 14.7627 18.6949C15.0932 19.2699 16.2352 21.1874 17.9166 22.7274C20.0864 24.7149 21.8455 25.3499 22.4749 25.6199C22.9438 25.8199 23.5027 25.7724 23.8453 25.3974C24.2802 24.9149 24.8172 24.1149 25.3639 23.3274C25.7526 22.7624 26.2434 22.6924 26.7586 22.8924C27.2834 23.0799 30.0606 24.4924 30.6316 24.7849C31.2026 25.0799 31.5793 25.2199 31.7177 25.4674C31.8538 25.7149 31.8538 26.8774 31.3849 28.2424Z" />
-							</svg>
-						</a>
-						<a href="" class="social__item">
-							<svg width="41" height="40" viewBox="0 0 41 40">
-								<path d="M29.9016 -0.00012207H11.0983C4.9786 -0.00012207 0 4.85705 0 10.8275V29.1725C0 35.1426 4.9786 39.9998 11.0983 39.9998H29.9019C36.0213 39.9998 40.9999 35.1426 40.9999 29.1725V10.8275C40.9999 4.85705 36.0213 -0.00012207 29.9016 -0.00012207V-0.00012207ZM20.5 30.937C14.3183 30.937 9.28936 26.0307 9.28936 19.9998C9.28936 13.969 14.3183 9.06266 20.5 9.06266C26.6816 9.06266 31.7106 13.969 31.7106 19.9998C31.7106 26.0307 26.6816 30.937 20.5 30.937ZM31.9786 11.642C30.1519 11.642 28.666 10.1924 28.666 8.4102C28.666 6.62798 30.1519 5.17809 31.9786 5.17809C33.8054 5.17809 35.2916 6.62798 35.2916 8.4102C35.2916 10.1924 33.8054 11.642 31.9786 11.642Z" />
-							</svg>
-						</a>
-					</div>
 				</div>
 				<button type="button" class="icon-menu"><span></span></button>
 			</div>
 		</header>
-		<main class="main main-comparison main-comparison-1">
-			<picture><source srcset="img/comparison/decor-right.webp" type="image/webp"><img class="object-intro__decor" src="img/comparison/decor-right.png" alt="decor"></picture>
+		<main class="main main-fix-client">
+			<picture><source srcset="img/page-object/decor.webp" type="image/webp"><img class="object-intro__decor" src="img/page-object/decor.png" alt="decor"></picture>
 
-			<div class="comparison__items">
-				<div class="comparison__item">
-					<picture><source srcset="img/comparison/house.webp" type="image/webp"><img src="img/comparison/house.png" alt=""></picture>
-					<p>Застройщики</p>
+			<form action="" class="form fix-client-form">
+				<h1 class="fix-client-form__title">Зафиксировать клиента</h1>
+
+				<div class="fix-client-form__body">
+
+
+					<div class="fix-client-form__row">Данные клиента</div>
+					<div class="fix-client-form__group">
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="text" placeholder="Фамилия*" class="fix-client-form__input input">
+						</label>
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="text" placeholder="Имя*" class="fix-client-form__input input">
+						</label>
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="text" placeholder="Отчество*" class="fix-client-form__input input">
+						</label>
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="tel" placeholder="Номер телефона*" class="fix-client-form__input input">
+						</label>
+					</div>
+					<div class="fix-client-form__row">Застройщики</div>
+					<div class="fix-client-form__group">
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="text" placeholder="Застройщик*" class="fix-client-form__input input">
+						</label>
+						<label class="fix-client-form__label">
+							<input autocomplete="off" type="text" placeholder="Жилой комплекс*" class="fix-client-form__input input">
+						</label>
+						<button type="button" class="fix-client-form__button fix-client-form__button-secondary button">+
+							Добавить застройщика</button>
+					</div>
+					<div class="fix-client-form__row">Дополнительные сведения</div>
+					<div class="fix-client-form__group">
+						<textarea class="fix-client-form__textarea" placeholder="Ваш комментарий к заявке"></textarea>
+
+						<label class="fix-client__checkbox">
+							<input checked="" type="checkbox" class="fix-client__checkbox-input">
+							<div class="fix-client__checkbox-button"></div>
+							<div class="fix-client__checkbox-text">
+								<span>Нужна помощь по ипотеке</span>
+								<span>Менеджер перезвонит вам и проведет консультацию</span>
+							</div>
+						</label>
+
+						<div class="checkbox">
+							<label class="checkbox__label">
+								<input id="c_5" checked="" class="checkbox__input" type="checkbox" onchange="checkParams()" value="5">
+								<span class="checkbox__control icon-check"></span>
+								<span class="checkbox__text">Принимаю условия <a href="" class="form-register__link">Пользовательского соглашения</a></span>
+							</label>
+						</div>
+					</div>
+
+					<button type="submit" class="fix-client-form__button button">Отправить заявку на фиксацию</button>
 				</div>
-				<div class="comparison__item">
-					<picture><source srcset="img/comparison/goverment.webp" type="image/webp"><img src="img/comparison/goverment.png" alt=""></picture>
-					<p>Банки</p>
-				</div>
-				<div class="comparison__item">
-					<picture><source srcset="img/comparison/file.webp" type="image/webp"><img src="img/comparison/file.png" alt=""></picture>
-					<p>Файлы 2.0</p>
-				</div>
-			</div>
+			</form>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__body">

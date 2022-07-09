@@ -5114,6 +5114,17 @@
             hash = hash ? `#${hash}` : window.location.href.split("#")[0];
             history.pushState("", "", hash);
         }
+        function fullVHfix() {
+            const fullScreens = document.querySelectorAll("[data-fullscreen]");
+            if (fullScreens.length && isMobile.any()) {
+                window.addEventListener("resize", fixHeight);
+                function fixHeight() {
+                    let vh = .01 * window.innerHeight;
+                    document.documentElement.style.setProperty("--vh", `${vh}px`);
+                }
+                fixHeight();
+            }
+        }
         let _slideUp = (target, duration = 500, showmore = 0) => {
             if (!target.classList.contains("_slide")) {
                 target.classList.add("_slide");
@@ -6007,8 +6018,7 @@
         if (inputMasks.length) modules_flsModules.inputmask = Inputmask().mask(inputMasks);
         var nouislider = __webpack_require__(211);
         function rangeInit() {
-            const priceSlider = document.querySelector("#range-slider"), input0 = document.getElementById("input-0"), input1 = document.getElementById("input-1"), inputs = (document.querySelectorAll(".filter-price__input"), 
-            [ input0, input1 ]);
+            const priceSlider = document.querySelector("#range-slider"), input0 = document.getElementById("input-0"), input1 = document.getElementById("input-1"), inputs = [ input0, input1 ];
             if (priceSlider) {
                 priceSlider.getAttribute("data-from");
                 priceSlider.getAttribute("data-to");
@@ -13963,13 +13973,15 @@ PERFORMANCE OF THIS SOFTWARE.
                 if (!element.classList.contains("filter-currency__current")) element.classList.add("filter-currency__current"); else element.classList.remove("filter-currency__current");
             }));
         }));
-        const filterWidthSize = () => {
-            const g = document.querySelector(".filter"), h = document.querySelector(".dropdown-filter-all");
-            if (h) h.style.width = g.offsetWidth + "px";
-        };
-        filterWidthSize();
-        window.onresize = function() {
+        window.onload = function() {
+            const filterWidthSize = () => {
+                const g = document.querySelector(".filter"), h = document.querySelector(".dropdown-filter-all");
+                if (h) h.style.width = g.offsetWidth + "px";
+            };
             filterWidthSize();
+            window.onresize = function() {
+                filterWidthSize();
+            };
         };
         const uploadFoto = document.querySelectorAll(".upload-foto"), deleteFoto = document.querySelectorAll(".delete-foto"), uploadInput = document.querySelectorAll(".upload-input"), reader = new FileReader;
         if (uploadFoto) {
@@ -13993,20 +14005,62 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             }));
         }
-        const clientsInfo = document.querySelectorAll(".clients-js"), clientsInfoDropdown = document.querySelectorAll(".clients-info__dropdown"), clientsInfoClose = document.querySelectorAll(".clients-info__close");
-        clientsInfo.forEach((el => {
-            el.addEventListener("click", (function(e) {
-                clientsInfoDropdown.forEach((element => {
-                    element.classList.remove("show");
+        const clientsInfo = document.querySelectorAll(".clients-js"), clientsInfoDropdown = document.querySelectorAll(".clients-info__dropdown"), clientsInfoClose = document.querySelectorAll(".clients-info__close"), clientsBody = document.querySelectorAll(".clients-body");
+        if (clientsInfo) {
+            clientsInfo.forEach((el => {
+                el.addEventListener("click", (function(e) {
+                    if (!this.closest(".clients-body__item").querySelector(".clients-info__dropdown").classList.contains("show")) {
+                        clientsInfoDropdown.forEach((element => {
+                            element.classList.remove("show");
+                        }));
+                        clientsBody.forEach((element => {
+                            element.classList.remove("show");
+                        }));
+                        this.closest(".clients-body__item").querySelector(".clients-info__dropdown").classList.add("show");
+                        this.closest(".clients-body").classList.add("show");
+                    } else {
+                        this.closest(".clients-body__item").querySelector(".clients-info__dropdown").classList.remove("show");
+                        this.closest(".clients-body").classList.remove("show");
+                    }
+                    if (document.documentElement.clientWidth > 1500) {
+                        const block = this.closest(".clients-body__item").querySelector(".clients-info__dropdown");
+                        block.style.top = this.offsetTop + 30 + "px";
+                        block.style.left = this.offsetLeft - this.closest(".clients-body__item").querySelector(".clients-info__dropdown").offsetWidth / 2 + "px";
+                    } else {
+                        const block = this.closest(".clients-body__item").querySelector(".clients-info__dropdown");
+                        block.style.top = this.offsetTop + 30 + "px";
+                        block.style.left = this.getBoundingClientRect().left - this.closest(".clients-body__item").querySelector(".clients-info__dropdown").offsetWidth / 2 + "px";
+                    }
                 }));
-                this.closest(".clients-body__item").querySelector(".clients-info__dropdown").classList.add("show");
             }));
-        }));
-        clientsInfoClose.forEach((element => {
-            element.addEventListener("click", (function(e) {
-                clientsInfoDropdown.forEach((element => {
-                    element.classList.remove("show");
+            clientsInfoClose.forEach((element => {
+                element.addEventListener("click", (function(e) {
+                    clientsInfoDropdown.forEach((element => {
+                        element.classList.remove("show");
+                    }));
+                    clientsBody.forEach((element => {
+                        element.classList.remove("show");
+                    }));
                 }));
+            }));
+            document.addEventListener("click", (function(e) {
+                if (!e.target.closest(".clients-body__item")) {
+                    clientsInfoDropdown.forEach((element => {
+                        element.classList.remove("show");
+                    }));
+                    clientsBody.forEach((element => {
+                        element.classList.remove("show");
+                    }));
+                }
+            }));
+        }
+        const resetFilterButton = document.querySelector(".filter__button-js");
+        if (resetFilterButton) resetFilterButton.addEventListener("click", (function(e) {
+            const selectFilter = this.closest(".dropdown-filter").querySelectorAll(".select");
+            selectFilter.forEach((element => {
+                const selectContent = element.querySelector(".select__content");
+                const selectOptions = element.querySelector(".select__options").firstChild;
+                selectContent.innerText = selectOptions.innerText;
             }));
         }));
         window["FLS"] = false;
@@ -14014,6 +14068,7 @@ PERFORMANCE OF THIS SOFTWARE.
         addTouchClass();
         addLoadedClass();
         menuInit();
+        fullVHfix();
         tabs();
     })();
 })();
