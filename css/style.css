@@ -1665,7 +1665,6 @@ body::after {
 
 .widget.widget-active span {
   left: -40px;
-  background: rgba(168, 168, 168, 0.5);
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
