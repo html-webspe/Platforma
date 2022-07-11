@@ -1653,14 +1653,16 @@ body::after {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  padding-left: 16px;
 }
 
 .widget.widget-active .widget__icon {
-  left: 151px;
+  left: 140px;
   background-color: #202020;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin-right: 0;
 }
 
 .widget.widget-active span {
